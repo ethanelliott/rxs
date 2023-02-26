@@ -10,6 +10,20 @@ RxS (Reactive Store) is a super light-weight implementation of a store that impl
 
 Using RxS, you can create a store with some initial state, react to changes to that state, select specific elements from that state, and then mutate the state or describe re-usable actions. 
 
+## Installation
+
+To install RxS, just run:
+
+```bash
+yarn add @ee-tools/rxs
+```
+
+or
+
+```bash
+npm install @ee-tools/rxs
+``` 
+
 ## Example
 
 Let's say you have an angular application and a component with some state that you want to react to.
