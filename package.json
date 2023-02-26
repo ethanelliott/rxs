@@ -1,5 +1,5 @@
 {
-  "name": "@ethanelliott/rxs",
+  "name": "@ee-tools/rxs",
   "version": "0.0.5",
   "description": "A Super simple, type-safe, and blaizngly fast RxJS store.",
   "author": {
