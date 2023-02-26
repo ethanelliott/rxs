@@ -21,6 +21,7 @@
     "test": "vitest run"
   },
   "devDependencies": {
+    "@changesets/cli": "^2.26.0",
     "@types/node": "^18.14.1",
     "tsup": "^6.6.3",
     "typescript": "^4.9.5",
