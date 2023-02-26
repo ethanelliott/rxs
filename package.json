@@ -1,5 +1,18 @@
 {
   "name": "rxs",
+  "version": "0.0.1",
+  "description": "A Super simple, type-safe, and blaizngly fast RxJS store.",
+  "author": {
+    "name": "Ethan Elliott"
+  },
+  "license": "MIT",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ethanelliott/rxs.git"
+  },
   "packageManager": "yarn@3.2.0",
   "scripts": {
     "build": "tsup src/index.ts --format esm,cjs --dts",
