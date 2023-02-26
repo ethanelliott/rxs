@@ -1,6 +1,6 @@
 {
   "name": "@ee-tools/rxs",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "description": "A Super simple, type-safe, and blaizngly fast RxJS store.",
   "author": {
     "name": "Ethan Elliott"

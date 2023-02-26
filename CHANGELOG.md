@@ -1,5 +1,11 @@
 # @ethanelliott/rxs
 
+## 0.0.7
+
+### Patch Changes
+
+- 11bc62c: add dist remove unused stuff
+
 ## 0.0.6
 
 ### Patch Changes
