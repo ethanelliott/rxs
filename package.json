@@ -20,7 +20,8 @@
     "lint": "tsc",
     "dev": "vitest",
     "test": "vitest run",
-    "release": "changeset publish"
+    "release": "changeset publish",
+    "version": "changeset version"
   },
   "devDependencies": {
     "@changesets/cli": "^2.26.0",
