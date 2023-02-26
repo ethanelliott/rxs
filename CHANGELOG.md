@@ -1,5 +1,11 @@
 # @ethanelliott/rxs
 
+## 0.1.1
+
+### Patch Changes
+
+- 97c0441: do release with new pr title
+
 ## 0.1.0
 
 ### Minor Changes
