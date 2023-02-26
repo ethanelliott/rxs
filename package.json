@@ -6,9 +6,9 @@
     "name": "Ethan Elliott"
   },
   "license": "MIT",
-  "main": "dist/index.js",
-  "module": "dist/index.mjs",
-  "types": "dist/index.d.ts",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/ethanelliott/rxs.git"
