@@ -1,5 +1,11 @@
 # @ethanelliott/rxs
 
+## 0.0.5
+
+### Patch Changes
+
+- f95c6ed: release please
+
 ## 0.0.4
 
 ### Patch Changes
