@@ -20,7 +20,7 @@
     "lint": "tsc",
     "dev": "vitest",
     "test": "vitest run",
-    "release": "changeset publish",
+    "release": "yarn build && changeset publish",
     "version": "changeset version"
   },
   "devDependencies": {
