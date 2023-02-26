@@ -1,5 +1,11 @@
 # @ethanelliott/rxs
 
+## 0.1.2
+
+### Patch Changes
+
+- a17127f: publish new readme
+
 ## 0.1.1
 
 ### Patch Changes
