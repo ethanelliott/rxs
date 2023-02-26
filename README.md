@@ -1,6 +1,6 @@
 # RxS
 <p align="center">
-  A super simple, type-safe, and blaizngly fast RxJS store.
+  A super simple, type-safe, and blazingly fast RxJS store.
 </p>
 <br/>
 
