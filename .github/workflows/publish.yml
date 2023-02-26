@@ -1,9 +1,12 @@
-name: CI
+name: Publish
 
-on: [push]
+on: 
+  push:
+    branches:
+      - "main"
 
 jobs:
-  build:
+  publish:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout
@@ -17,3 +20,11 @@ jobs:
     - run: yarn lint
     - run: yarn test
     - run: yarn build
+    - name: Create Release Pull Request or Publish
+      id: changesets
+      uses: changesets/actions@v1
+      with:
+        publish: yarn release
+      env: 
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
