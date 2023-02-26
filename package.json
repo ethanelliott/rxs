@@ -5,6 +5,7 @@
   "author": {
     "name": "Ethan Elliott"
   },
+  "private": "false",
   "license": "MIT",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",
