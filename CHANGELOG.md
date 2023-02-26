@@ -1,5 +1,11 @@
 # @ethanelliott/rxs
 
+## 0.0.6
+
+### Patch Changes
+
+- 8c6c876: new name
+
 ## 0.0.5
 
 ### Patch Changes
