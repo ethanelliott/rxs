@@ -2,6 +2,8 @@ src
 .changeset
 .github
 .yarn/
+playground/
 yarn.lock
 tsconfig.json
 .editorconfig
+.prettierrc.json

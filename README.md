@@ -1,4 +1,5 @@
 # RxS
+
 <p align="center">
   A super simple, type-safe, and blazingly fast RxJS store.
 </p>
@@ -8,7 +9,7 @@
 
 RxS (Reactive Store) is a super light-weight implementation of a store that implements reactivity through RxJS.
 
-Using RxS, you can create a store with some initial state, react to changes to that state, select specific elements from that state, and then mutate the state or describe re-usable actions. 
+Using RxS, you can create a store with some initial state, react to changes to that state, select specific elements from that state, and then mutate the state or describe re-usable actions.
 
 ## Installation
 
@@ -22,7 +23,7 @@ or
 
 ```bash
 npm install @ee-tools/rxs
-``` 
+```
 
 ## Example
 
@@ -59,5 +60,6 @@ export class AppComponent {
     this.store.dispatch('changeName', 'Ethan');
   }
 }
-
 ```
+
+## API

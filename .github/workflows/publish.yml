@@ -1,31 +1,31 @@
 name: Publish
 
-on: 
+on:
   push:
     branches:
-      - "main"
+      - 'main'
 
 jobs:
   publish:
     runs-on: ubuntu-latest
     steps:
-    - name: Checkout
-      uses: actions/checkout@v3
-    - name: Use Node
-      uses: actions/setup-node@v3
-      with:
-        node-version: 18.x
-        cache: 'yarn'
-    - run: yarn install --immutable
-    - run: yarn lint
-    - run: yarn test
-    - run: yarn build
-    - name: Create Release Pull Request or Publish
-      id: changesets
-      uses: changesets/action@v1
-      with:
-        publish: yarn release
-        title: "🚀 chore(release): version <version>"
-      env: 
-        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Use Node
+        uses: actions/setup-node@v3
+        with:
+          node-version: 18.x
+          cache: 'yarn'
+      - run: yarn install --immutable
+      - run: yarn lint
+      - run: yarn test
+      - run: yarn build
+      - name: Create Release Pull Request or Publish
+        id: changesets
+        uses: changesets/action@v1
+        with:
+          publish: yarn release
+          title: '🚀 chore(release): version <version>'
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
