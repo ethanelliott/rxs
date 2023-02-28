@@ -1,4 +1,12 @@
-import { catchError, map, Observable, of, startWith } from 'rxjs';
+import {
+  catchError,
+  map,
+  Observable,
+  of,
+  startWith,
+  switchMap,
+  BehaviorSubject,
+} from 'rxjs';
 
 export interface StateMachine<T> {
   data?: T;
@@ -7,11 +15,18 @@ export interface StateMachine<T> {
 }
 
 export function asStateMachine<T>(
-  observable: Observable<T>
+  observable: Observable<T>,
+  restart: Observable<void> = new BehaviorSubject<void>(
+    undefined
+  ).asObservable()
 ): Observable<StateMachine<T>> {
-  return observable.pipe(
-    map((data) => ({ loading: false, data })),
-    startWith({ loading: true }),
-    catchError((error: Error) => of({ loading: false, error }))
+  return restart.pipe(
+    switchMap(() =>
+      observable.pipe(
+        map((data) => ({ loading: false, data })),
+        startWith({ loading: true }),
+        catchError((error: Error) => of({ loading: false, error }))
+      )
+    )
   );
 }
