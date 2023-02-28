@@ -1,5 +1,11 @@
 # @ethanelliott/rxs
 
+## 0.1.5
+
+### Patch Changes
+
+- eba5c25: add state machine
+
 ## 0.1.4
 
 ### Patch Changes
