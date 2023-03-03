@@ -19,7 +19,7 @@
 
 ## Introduction
 
-RxS (Reactive Store) is a super light-weight implementation of a store that implements reactivity through RxJS.
+RxS (Reactive Store) is a super light-weight implementation of a store that is fully reactive through RxJS.
 
 Using RxS, you can create a store with some initial state, react to changes to that state, select specific elements from that state, and then mutate the state or describe re-usable actions.
 
