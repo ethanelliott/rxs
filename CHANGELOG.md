@@ -1,5 +1,11 @@
 # @ethanelliott/rxs
 
+## 0.1.6
+
+### Patch Changes
+
+- da4c0dd: docs update and ignore prettier in the publish
+
 ## 0.1.5
 
 ### Patch Changes
