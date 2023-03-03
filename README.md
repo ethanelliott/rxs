@@ -5,6 +5,18 @@
 </p>
 <br/>
 
+![npm (scoped)](https://img.shields.io/npm/v/@ee-tools/rxs?style=for-the-badge)
+![npm bundle size (scoped)](https://img.shields.io/bundlephobia/min/@ee-tools/rxs?style=for-the-badge)
+![Libraries.io dependency status for latest release, scoped npm package](https://img.shields.io/librariesio/release/npm/@ee-tools/rxs?style=for-the-badge)
+![npms.io (final)](https://img.shields.io/npms-io/quality-score/@ee-tools/rxs?style=for-the-badge)
+![npms.io (final)](https://img.shields.io/npms-io/popularity-score/@ee-tools/rxs?style=for-the-badge)
+![NPM](https://img.shields.io/npm/l/@ee-tools/rxs?style=for-the-badge)
+![Libraries.io SourceRank](https://img.shields.io/librariesio/sourcerank/npm/@ee-tools/rxs?style=for-the-badge)
+![npm](https://img.shields.io/npm/dw/@ee-tools/rxs?style=for-the-badge)
+![Dependents (via libraries.io), scoped npm package](https://img.shields.io/librariesio/dependents/npm/@ee-tools/rxs?style=for-the-badge)
+![Snyk Vulnerabilities for npm scoped package](https://img.shields.io/snyk/vulnerabilities/npm/@ee-tools/rxs?style=for-the-badge)
+
+
 ## Introduction
 
 RxS (Reactive Store) is a super light-weight implementation of a store that implements reactivity through RxJS.
