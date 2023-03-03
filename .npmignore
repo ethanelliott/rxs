@@ -6,4 +6,5 @@ playground/
 yarn.lock
 tsconfig.json
 .editorconfig
-.prettierrc.json
+.prettierrc
+.prettierignore

@@ -54,7 +54,7 @@ const initialState = { name: 'Initial Name' };
 })
 export class AppComponent {
   // Create a store using the initial state and an action to change the name
-  store = store(initialState, {
+  store = createStore(initialState, {
     changeName: (state, newName: string) => {
       state.name = newName;
 
@@ -75,3 +75,89 @@ export class AppComponent {
 ```
 
 ## API
+
+### `createStore()`
+
+This method is called with the initial state and any associated actions to mutate the state. Similar to how redux introduces a single object for the entire state application and allows reacting on it, this returned store implements the RxJS Observable, as well as a few helper methods.
+
+**Example**
+
+```typescript
+const initialState = { count: 0 };
+
+const store$ = createStore(initialState);
+
+// The store object returned by createStore is also an RxJS Observable, 
+// so you can subscribe to changes on the entire store!
+
+store$.subscribe((state) => console.log(state))
+```
+
+#### `mutate()` 
+
+This method on the store allows you to directly mutate the entire state. It accepts a method that gives you the current state and expects you to return a new state.
+
+**Example**
+
+```typescript
+
+const store = createStore({count: 0});
+
+store.mutate((state) => {
+  state.count++;
+
+  return state;
+});
+```
+
+#### `select()`
+
+Select will allow you to pick a value from the root store object, and get an observable for all changes to that specific value.
+
+**Example**
+
+```typescript
+const store = createStore({count: 0});
+
+const count$ = store.select('count');
+//      ^?  Observable<number>
+```
+
+#### `dispatch()`
+
+Dispatch allows you to initiate one of the predefined actions against the store. It accepts two arguments; the first is the name of the action, and the second is the optional parameter to provide to your action.
+
+**Example**
+
+In this example we are going to also demonstrate defining the actions to increment and decrement the count.
+
+```typescript
+const initialState = {count: 0};
+
+const store = createStore(initialState, {
+  increment: (state) => {
+    state.count++;
+
+    return state;
+  },
+  decrement: (state) => {
+    state.count--;
+
+    return state;
+  },
+  setCount: (state, count) => {
+    state.count = count;
+
+    return state;
+  }
+});
+
+// Now that we have all of these actions, we can call them anywhere!
+
+store.dispatch('increment');
+
+store.dispatch('decrement');
+
+store.dispatch('setCount', 100);
+
+```
